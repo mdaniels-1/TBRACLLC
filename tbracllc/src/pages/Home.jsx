@@ -1,7 +1,8 @@
 import React from 'react';
 import DynamicThreeImageDisplay from '../components/DynamicThreeImageDisplay.jsx';
+import BuildingIcon from '../components/BuildingIcon.jsx';
 import '../../public/home.css';
-import '../components/styles/DynamicThreeImageDisplay.css';
+
 
 
 // parameters for dynamic three image display below
@@ -19,11 +20,17 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='title_container'>
-        <video className='bg_home_vid'  loop='true' autoPlay='true' muted>
+        {/* <video className='bg_home_vid'  loop='true' autoPlay='true' muted>
           <source src='../../public/videos/sample.mp4' type="video/mp4"/>
-        </video>
+        </video> */}
+        
+        <div className='icon'>
+          <BuildingIcon />
+        </div>
+
         <div className='title_overlay'>
-          <h1 className='title'>TBRAC  LLC.</h1>
+          <h1 className='title'>TBRAC LLC.</h1>
+          <p> need to adjust icon or the text so it's centered. have to check that</p>
           <p className='mini_title'>Insert mini intro here. like 'architecture, hvac, blah, and blah.'</p>
         </div>
       </div>
