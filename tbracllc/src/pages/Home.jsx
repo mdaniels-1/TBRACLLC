@@ -1,7 +1,10 @@
 import React from 'react';
-import DynamicThreeImageDisplay from '../components/DynamicThreeImageDisplay.jsx';
+import ProjectComponent from '../components/ProjectComponent.jsx';
+import DisplayProjectsComponent from '../components/DisplayProjectsComponent.jsx'
 import BuildingIcon from '../components/BuildingIcon.jsx';
 import '../../public/home.css';
+import jsonData from '../data/buildings.json';
+
 
 
 
@@ -35,20 +38,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
-        <h1>3rd Think about site</h1>
-        <p>The position: sticky property tells the browser to let an element scroll with the rest of the document until it reaches the top of the page. Once it does, it should stick there and let the rest of the elements on the page scroll behind it</p>
+      <div className='projects_overview_home'>
+         <p>hello</p>
+         <DisplayProjectsComponent json={jsonData} numProjects={2}/>
       </div>
 
-      <div>
-        <h1>3rd Think about site</h1>
-        <p>The position: sticky property tells the browser to let an element scroll with the rest of the document until it reaches the top of the page. Once it does, it should stick there and let the rest of the elements on the page scroll behind it</p>
-      </div>
+      {/* <ProjectComponent p={jsonData.domino} /> */}
 
-      <div>
-        <h1>3rd Think about site</h1>
-        <p>The position: sticky property tells the browser to let an element scroll with the rest of the document until it reaches the top of the page. Once it does, it should stick there and let the rest of the elements on the page scroll behind it</p>
-      </div>
+
+      
+
 
 
       {/* <DynamicThreeImageDisplay {...DynamicThreeImageDisplayParams}/> */}

@@ -20,11 +20,23 @@
     /* overflow: hidden; */
 }
 
+.learn_button{
+    background-color: orange;
+}
+
 
 
 .mini_title{
     font-size: 1.5em;
     text-align: left;
+}
+
+.more_projects_button{
+    width: 10em;
+}
+
+.projects_overview_home{
+    display: grid;
 }
 
 .title{

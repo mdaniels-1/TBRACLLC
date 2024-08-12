@@ -1,13 +1,47 @@
-const DynamicThreeImageDisplay = ({img1_src, img1_text, img2_src, img2_text, img3_src, img3_text}) =>{
+import './styles/ProjectComponent.css';
+import PropTypes from 'prop-types';
+
+// p: json object that contains the project data
+const ProjectComponent = ({p}) =>{
+
     return(
-        <div className='home_images_container'>
-            <img id='img1' src={img1_src} alt={img1_text}/>
-            <img id='img2' src={img2_src} alt={img2_text}/>
-            <img id='img3' src={img3_src} alt={img3_text}/>
+        <div className='project_container'>
+            <div className='picture'>
+                <p>building image here</p>
+                <img src={`../../${p.image_name}`} alt={`Image pictured is ${p.name}`}/>
+            </div>
+            <div className='details'>
+                <p className='name'>{p.name}</p>
+                <p className='address'>{p.address}</p>
+                <p className='desc'>{p.desc}</p>
+                <p className='year'>Year of Completion: {p.year}</p>
+                <p className='area'>Total Square Footage: {p.area}</p>
+                <p className='scope'>Scope of Work: {p.scope}</p>
+                <p className='notes'>Notes: {p.notes}</p>    
+            </div>        
         </div>
+
     )
 }
 
-export default DynamicThreeImageDisplay;
+// fix the prop type validation error
+ProjectComponent.propTypes = {
+    p: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        address: PropTypes.string.isRequired,
+        desc: PropTypes.string.isRequired,
+        cost: PropTypes.string.isRequired,
+        year: PropTypes.string.isRequired,
+        area: PropTypes.number,
+        scope: PropTypes.string.isRequired,
+        notes: PropTypes.string,
+        image_name: PropTypes.string.isRequired
+
+    })
+  };
+
+
+
+export default ProjectComponent;
 
 

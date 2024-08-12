@@ -1,0 +1,38 @@
+.address{
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+
+.details{
+    float: right;
+    background-color: yellow;
+    width: calc(100% - 15em);
+
+}
+
+.details p{
+    text-align: left;
+}
+
+
+.name{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.picture{
+    float: left;
+    background-color: blue;
+    height: 100%;
+    width: 15em;
+
+}
+
+.project_container{
+    margin: 1em;
+    
+}
+
