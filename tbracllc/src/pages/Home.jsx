@@ -1,22 +1,11 @@
 import React from 'react';
-import ProjectComponent from '../components/ProjectComponent.jsx';
 import DisplayProjectsComponent from '../components/DisplayProjectsComponent.jsx'
 import BuildingIcon from '../components/BuildingIcon.jsx';
 import '../../public/home.css';
 import jsonData from '../data/buildings.json';
+import {Link} from 'react-router-dom';
 
 
-
-
-// parameters for dynamic three image display below
-// const DynamicThreeImageDisplayParams = {
-//   img1_src: 'https://th.bing.com/th/id/OIP.dozEvAlhTqQRy_QO0M9H8AHaE8?rs=1&pid=ImgDetMain',
-//   img1_text: 'This is a description for image1',
-//   img2_src: 'https://th.bing.com/th/id/OIP.dozEvAlhTqQRy_QO0M9H8AHaE8?rs=1&pid=ImgDetMain',
-//   img2_text: 'This is a description for image2',
-//   img3_src: 'https://th.bing.com/th/id/OIP.dozEvAlhTqQRy_QO0M9H8AHaE8?rs=1&pid=ImgDetMain',
-//   img3_text: 'This is a description for image3'
-// }
 
 
 const Home = () => {
@@ -38,19 +27,37 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='projects_overview_home'>
-         <p>hello</p>
-         <DisplayProjectsComponent json={jsonData} numProjects={2}/>
+      <div className='bio_container'>
+        <h2>About Us</h2>
+        TBRAC LLC is a ____ company, owned and operated by Timothy Daniels. Founded in ___, TBRAC LLC has grown to become ____
+
+
+        <h3>Who is Timothy Daniels? | A Brief Interview</h3>
+
+        <h4>What inspired you to start this company?</h4>
+        
+        <h4>What are your qualifications or expertise?</h4>
+
+        <h4>What is your approach or philosophy?</h4>
+
+        <h4>What do you enjoy most about your work?</h4>
+
+        <h4>How can clients get in touch with you?</h4>
+
       </div>
 
-      {/* <ProjectComponent p={jsonData.domino} /> */}
+      <div className='projects_overview_home'>
+         <h2>Projects</h2>
+         <DisplayProjectsComponent json={jsonData} numProjects={2}/>
+         
+         <Link className='see_projects_button' to='/projects'>
+            <button>View All Projects</button>
+         </Link>
+      </div>
 
 
-      
 
 
-
-      {/* <DynamicThreeImageDisplay {...DynamicThreeImageDisplayParams}/> */}
 
     </div>
   )

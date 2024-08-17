@@ -1,5 +1,7 @@
 import { createElement } from 'react';
 import ProjectComponent from './ProjectComponent';
+import './styles/DisplayProjectsComponent.css';
+
 
 
 // Takes a json object and a container. 
@@ -10,10 +12,12 @@ const DisplayProjectsComponent = ({json, numProjects}) =>{
 
     
     //ensure it's in bounds. if projects size > actual projects, set size to total num of projects
-    if(numProjects > keys.length){ 
+    if(typeof(numProjects) != 'number'){ //if it's not a num value --> include all
         numProjects = keys.length;
-    }
-
+    }else if(numProjects > keys.length){ 
+        numProjects = keys.length;
+    } 
+    
     const projects = []; // array to hold loaded projects
 
     for(let i = 0; i < numProjects; i++){

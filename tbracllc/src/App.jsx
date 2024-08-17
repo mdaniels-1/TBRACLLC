@@ -10,7 +10,7 @@ import {
 } from 'react-router-dom'
 
 import Home from './pages/Home'
-import About from './pages/Projects'
+import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 
@@ -22,7 +22,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/projects" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />}/>
       </Routes>
     </Router>

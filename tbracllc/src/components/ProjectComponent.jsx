@@ -7,17 +7,16 @@ const ProjectComponent = ({p}) =>{
     return(
         <div className='project_container'>
             <div className='picture'>
-                <p>building image here</p>
-                <img src={`../../${p.image_name}`} alt={`Image pictured is ${p.name}`}/>
+                <img src={`../src/data/${p.image_name}`} alt={`Image pictured is ${p.name}`}/>
             </div>
             <div className='details'>
                 <p className='name'>{p.name}</p>
                 <p className='address'>{p.address}</p>
                 <p className='desc'>{p.desc}</p>
                 <p className='year'>Year of Completion: {p.year}</p>
-                <p className='area'>Total Square Footage: {p.area}</p>
+                {p.area != null && <p className='area'>Total Square Footage: {p.area}</p>}
                 <p className='scope'>Scope of Work: {p.scope}</p>
-                <p className='notes'>Notes: {p.notes}</p>    
+                {p.notes != "" && <p className='notes'>Notes: {p.notes}</p>}    
             </div>        
         </div>
 

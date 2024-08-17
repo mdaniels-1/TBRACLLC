@@ -1,0 +1,4 @@
+.miniProjectDisplayContainer{
+    display: flex;
+    flex-direction: column;
+}
