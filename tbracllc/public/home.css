@@ -1,3 +1,8 @@
+.bio_content{
+    padding: 0em 2.5em; /*top-bot left-right*/
+    text-align: justify;
+}
+
 .bg_home_vid{
     object-fit: cover;
     position: absolute;
@@ -43,7 +48,7 @@ h2{
 
 .see_projects_button button{
     background-color: rgb(238, 173, 75);
-    width: 100%;
+    width: 30%;
     height: 100%;
     margin: 0em 0.5em 0em 0.5em; /*top right bottom left*/
     text-transform: uppercase;

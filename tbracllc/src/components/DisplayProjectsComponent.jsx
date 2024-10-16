@@ -1,6 +1,9 @@
 import { createElement } from 'react';
 import ProjectComponent from './ProjectComponent';
 import './styles/DisplayProjectsComponent.css';
+// import { json } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
 
 
 
@@ -36,6 +39,24 @@ const DisplayProjectsComponent = ({json, numProjects}) =>{
     return container;
 
 }
+
+DisplayProjectsComponent.propTypes = {
+    // json: PropTypes.shape({
+    //     name: PropTypes.string.isRequired,
+    //     address: PropTypes.string.isRequired,
+    //     desc: PropTypes.string.isRequired,
+    //     cost: PropTypes.string.isRequired,
+    //     year: PropTypes.string.isRequired,
+    //     area: PropTypes.number,
+    //     scope: PropTypes.string.isRequired,
+    //     notes: PropTypes.string,
+    //     image_name: PropTypes.string.isRequired
+
+    // }),
+    json: PropTypes.objectOf(PropTypes.object),
+    numProjects: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  };
+
 
 
 export default DisplayProjectsComponent;

@@ -9,19 +9,7 @@
         "scope": "HVAC Systems", 
         "notes": "https://www.hilton.com/en/hotels/nycwawa-waldorf-astoria-new-york/history/",
         "image_name": "Waldorf.jpg"
-    }, 
-    
-    "mandarin": {
-        "name": "Mandarin Oriental Residences",
-        "address": "685 5th Avenue Residence, 685 Fifth Avenue, New York, NY 10013 USA",
-        "desc": "This building is 29 stories tall.",
-        "cost": "$135 million",
-        "year": "2023 (completed)",
-        "area": null,
-        "scope": "HVAC and Plumbing Systems", 
-        "notes": "",
-        "image_name": "Mandarin.jpg"
-    }, 
+    },  
 
     "macys":{
         "name": "Macy's",
@@ -33,6 +21,19 @@
         "scope": "HVAC and Plumbing Systems", 
         "notes": "",
         "image_name": "Macys.jpg"
+    },
+
+        
+    "mandarin": {
+        "name": "Mandarin Oriental Residences",
+        "address": "685 5th Avenue Residence, 685 Fifth Avenue, New York, NY 10013 USA",
+        "desc": "This building is 29 stories tall.",
+        "cost": "$135 million",
+        "year": "2023 (completed)",
+        "area": null,
+        "scope": "HVAC and Plumbing Systems", 
+        "notes": "",
+        "image_name": "Mandarin.jpg"
     },
 
     "kent":{

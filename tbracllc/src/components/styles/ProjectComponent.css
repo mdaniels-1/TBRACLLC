@@ -7,6 +7,7 @@
 .details{
     float: right;
     width: calc(100% - 20em);
+    padding: 0em 1em; /*top-bot left-right*/
 
 }
 
@@ -42,6 +43,8 @@
     margin: 0.8em;
     display: flex;  
     box-shadow: 0em 0em 0.5em 0em #333333; /* create box effect*/
+    padding-right:0em;
 
 }
+
 

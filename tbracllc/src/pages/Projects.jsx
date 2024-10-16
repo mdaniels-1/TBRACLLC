@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import DisplayProjectsComponent from '../components/DisplayProjectsComponent.jsx'
 import jsonData from '../data/buildings.json';
 
