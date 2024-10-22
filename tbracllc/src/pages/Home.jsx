@@ -42,10 +42,12 @@ const Home = () => {
             <li><b>Field Survey:</b> Advanced field survey services to capture precise site conditions and inform project design. We employ state-of-the-art technology to ensure accurate measurements and comprehensive data collection.</li>
             <li><b>Revit BIM Project Coordination (MEP):</b> Utilization of Revit BIM technology for effective project coordination, integrating mechanical, electrical, and plumbing systems into a cohesive model. This approach enhances collaboration, reduces conflicts, and improves project efficiency.</li>
             <li><b>BIM Coordinate Management:</b> Expert management of BIM coordination to ensure seamless integration of all building systems. Our process facilitates collaboration among different disciplines and optimizes overall project design.</li>          </ol>
+        
+          <h3>Experience and Expertise</h3>
+          <p>With over 30 years of professional experience in architecture and mechanical MEP design/layout, and more than 20 years of expertise in 3D/BIM modeling using the latest 3D CAD software, TBRAC LLC brings a wealth of knowledge to every project. Our work is developed entirely within a 3D virtual environment to ensure accuracy and adherence to state and local code compliance, project specifications, and manufacturer&apos;s equipment installation guidelines.</p>
+
         </div>
 
-        <h3>Experience and Expertise</h3>
-        <p>With over 30 years of professional experience in architecture and mechanical MEP design/layout, and more than 20 years of expertise in 3D/BIM modeling using the latest 3D CAD software, TBRAC LLC brings a wealth of knowledge to every project. Our work is developed entirely within a 3D virtual environment to ensure accuracy and adherence to state and local code compliance, project specifications, and manufacturer&apos;s equipment installation guidelines.</p>
 
       </div>
 
