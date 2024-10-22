@@ -7,7 +7,7 @@ const ProjectComponent = ({p}) =>{
     return(
         <div className='project_container'>
             <div className='picture'>
-                <img src={`../src/data/${p.image_name}`} alt={`Image pictured is ${p.name}`}/>
+                <img src={`/data/${p.image_name}`} alt={`Image pictured is ${p.name}`}/>
             </div>
             <div className='details'>
                 <p className='name'>{p.name}</p>
