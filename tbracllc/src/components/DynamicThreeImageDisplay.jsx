@@ -1,3 +1,4 @@
+import '../components/styles/DynamicThreeImageDisplay.css';
 
 const DynamicThreeImageDisplay = ({img1_src, img1_text, img2_src, img2_text, img3_src, img3_text}) =>{
     return(

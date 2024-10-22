@@ -1,0 +1,91 @@
+{
+    "waldorf": {
+        "name": "Waldorf Astoria - Historical Building",
+        "address": "301 Park Avenue, New York, New York 10022 USA",
+        "desc": "Newly restored, the Waldorf Astoria will be transformed into a mixed use building. At 47 stories tall, this building is now home to Hilton Hotel's sophisticated dining and residential homes.",
+        "cost": "Originally at an estimated $1 billion reonovation cost, as of May 2024, it has been updated to $2 billion.",
+        "year": "2024 (Estimated)",
+        "area": null,
+        "scope": "HVAC Systems", 
+        "notes": "https://www.hilton.com/en/hotels/nycwawa-waldorf-astoria-new-york/history/",
+        "image_name": "Waldorf.jpg"
+    },  
+
+    "macys":{
+        "name": "Macy's",
+        "address": "422 Fulton St, Brooklyn, Ny 11201 USA",
+        "desc": "Converted into a mixed-use building, this site hosts old and new retail and office space.",
+        "cost": "$294 million",
+        "year": "2020 (completed)",
+        "area":  620000,
+        "scope": "HVAC and Plumbing Systems", 
+        "notes": "",
+        "image_name": "Macys.jpg"
+    },
+
+        
+    "mandarin": {
+        "name": "Mandarin Oriental Residences",
+        "address": "685 5th Avenue Residence, 685 Fifth Avenue, New York, NY 10013 USA",
+        "desc": "This building is 29 stories tall.",
+        "cost": "$135 million",
+        "year": "2023 (completed)",
+        "area": null,
+        "scope": "HVAC and Plumbing Systems", 
+        "notes": "",
+        "image_name": "Mandarin.jpg"
+    },
+
+    "kent":{
+        "name": "The Kent | Upper East Side",
+        "address": "200 E 95th Street, New York, NY 10128 USA",
+        "desc": "At 30 stories high, this building hosts 23 units consisting of retail spaces and residential homes. ",
+        "cost": "$260 million",
+        "year": "2017 (completed)",
+        "area": 190000,
+        "scope": "HVAC and Hydronic Pipe Systems", 
+        "notes": "Developed by Extell Development",
+        "image_name": "Kent.jpg"
+    },
+
+    "500":{
+        "name": "500 East 14th Street | East Village",
+        "address": "500 E 14th St, New York, NY 10009 USA",
+        "desc": "This project consisted of two (2) seven story mixed-use buildings for retail and residential space. The building located at 500 14th East Street consists of 106 units, while the 524 14th East Street building is 44 combined units.",
+        "cost": "$35 million",
+        "year": "2017 (completed)",
+        "area": 250000,
+        "scope": "HVAC and Hydronic Pipe Systems", 
+        "notes": "",
+        "image_name": "500.jpg"
+
+    },
+
+    "pace":{
+        "name": "Pace University - 15 Beekman Street",
+        "address": "15 Beekman St, New York, NY 100   38 USA",
+        "desc": "This 26-story campus expansion is a collections of classrooms, administrative, and Faculty Offices, common spaces, suite-style dorm rooms, a dining facility, a library and learning center, and three-floors for the Seidenberg School of Computer Science and Information systems. ",
+        "cost": "$56.75 million",
+        "year": "2023 (opened)",
+        "area": 2130841,
+        "scope": "", 
+        "notes": "",
+        "image_name": "Pace.jpg"
+
+    },
+
+    "domino":{
+        "name": "Domino Sugar Redevelopment | Site D",
+        "address": "350 Kent Avenue, Brooklyn, NY 11249 USA",
+        "desc": "Site D is made up of two residential towers - North and South. The North tower is 42 stories tall, and the South tower is 56 stories tall. The site yields 600 units, with both condominium and rental apartments.",
+        "cost": "$56.75 million",
+        "year": "2023 (opened)",
+        "area": null,
+        "scope": "", 
+        "notes": "",
+        "image_name": "Mandarin.jpg"
+
+    }
+
+
+}

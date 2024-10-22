@@ -26,11 +26,15 @@ nav a:hover{
 .nav_container{
     width: 100%;
     padding-bottom: 0.1em;
+    height: 3em;
+    background-color: yellow;
 
-    /*make stikcy*/
-    position: -webkit-sticky;
-    position: sticky; /*or use fixed. not sure which to utilize yet*/
+    /* make stikcy */
+    /* position: -webkit-sticky; */
+    position: sticky; /*or use fixed. not sure which to utilize yet */
     top: 0;
+    left: 0;
+    z-index: 1;
 
 }
 
