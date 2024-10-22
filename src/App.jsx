@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 
 import {
@@ -7,25 +6,28 @@ import {
   Route,
 } from 'react-router-dom'
 
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
-import Navbar from './components/Navbar'
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />}/>
       </Routes>
       {/* add footer here */}
+      <Footer />
     </Router>
   )
 }
 
-export default App
+export default App;

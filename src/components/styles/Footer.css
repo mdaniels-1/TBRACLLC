@@ -1,0 +1,10 @@
+.footer_container{
+    background-color: black;
+    display: flex;
+    padding: 4em 5em;
+
+}
+
+img{
+    height: 2em;
+}
