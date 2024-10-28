@@ -6,17 +6,21 @@ import {
   Route,
 } from 'react-router-dom'
 
+import ScrollToTop from './components/ScrollToTop';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import LogoBar from './components/LogoBar';
 
 function App() {
 
   return (
     <Router>
+      <LogoBar />
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -24,8 +28,9 @@ function App() {
         <Route path="/projects" element={<Projects />} />
 {/*         <Route path="/contact" element={<Contact />}/> */}
       </Routes>
-      {/* add footer here */}
       <Footer />
+      <ScrollToTop /> {/*see ScrollToTop.js for details */}
+
     </Router>
   )
 }

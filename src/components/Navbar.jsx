@@ -5,6 +5,7 @@ import '../components/styles/Navbar.css'
 const Navbar = () => {
   return (
     <div className='nav_container'>
+
       <nav>
         <NavLink to="/" >Home</NavLink>
         <NavLink to="/about" >About</NavLink>
