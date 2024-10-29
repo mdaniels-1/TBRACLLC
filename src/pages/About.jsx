@@ -1,6 +1,5 @@
 // import React from 'react';
-import BuildingIcon from '../components/BuildingIcon.jsx';
-import '../../public/home.css';
+import '../../public/css/about.css';
 import jsonData from '../data/buildings.json';
 import {Link} from 'react-router-dom';
 import ProjectComponent from '../components/ProjectComponent.jsx';
@@ -30,6 +29,8 @@ const About = () => {
           <h3>Experience and Expertise</h3>
           <p>With over 30 years of professional experience in architecture and mechanical MEP design/layout, and more than 20 years of expertise in 3D/BIM modeling using the latest 3D CAD software, TBRAC LLC brings a wealth of knowledge to every project. Our work is developed entirely within a 3D virtual environment to ensure accuracy and adherence to state and local code compliance, project specifications, and manufacturer&apos;s equipment installation guidelines.</p>
 
+          <h3>Commitment to Excellence</h3>
+          <p>TBRAC LLC is dedicated to maintaining the highest standards of professionalism and integrity. Our team’s expertise, combined with our innovative approach and commitment to client satisfaction, positions us as a trusted partner in the construction industry.</p>
         </div>
 
 
@@ -40,9 +41,9 @@ const About = () => {
          <ProjectComponent p={jsonData.waldorf}/>
          <ProjectComponent p={jsonData.macys}/>
 
-         <Link className='see_projects_button' to='/projects'>
+         {/* <Link className='see_projects_button' to='/projects'>
             <button>View All Projects</button>
-         </Link>
+         </Link> */}
       </div>
 
 

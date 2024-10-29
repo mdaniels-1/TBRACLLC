@@ -1,6 +1,6 @@
 // import React from 'react';
 import BuildingIcon from '../components/BuildingIcon.jsx';
-import '../../public/home.css';
+import '../../public/css/home.css';
 
 
 
@@ -18,9 +18,8 @@ const Home = () => {
         </div>
 
         <div className='title_overlay'>
-          <h1 className='title'>TBRAC LLC.</h1>
-{/*           <p> need to adjust icon or the text so it&apos;s centered. have to check that</p> */}
-{/*           <p className='mini_title'>Insert mini intro here. like &apos;architecture, hvac, blah, and blah.&apos;</p> */}
+          <img className='home_logo' src='./images/logo.jpeg' alt={'TBRAC LLC Logo'} />
+          <p className='mini_title'>At TBRAC LLC, our mission is to deliver exceptional engineering and construction services by leveraging our extensive experience, innovative technologies, and commitment to quality. We strive to exceed client expectations and contribute to the successful completion of every project through meticulous planning, precise execution, and continuous collaboration.</p>
         </div>
       </div>
 

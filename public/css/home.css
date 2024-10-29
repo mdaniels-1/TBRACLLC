@@ -14,6 +14,14 @@
 
 }
 
+.home_logo{
+    padding: 2em 0em;
+    margin: 0em;
+    height: 10em;
+    width: 30em;
+    object-fit: cover;
+}
+
 h2{
     font-size: 2em;
     padding: 1em;
@@ -24,7 +32,6 @@ h2{
 .icon{
     position: relative;
     overflow: hidden;
-    top: 60%;
 }
 
 .learn_button{
@@ -35,7 +42,7 @@ h2{
 
 .mini_title{
     font-size: 1.5em;
-    text-align: left;
+    /* text-align: center; */
 }
 
 .more_projects_button{
@@ -76,6 +83,7 @@ h2{
     align-content: center; /* centers contents vertically*/
     justify-items: center; /*aligns title stuff in center horizontally */
     overflow: hidden;
+    padding: 5em 0em;
 
 }
 
