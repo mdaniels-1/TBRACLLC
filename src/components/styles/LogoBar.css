@@ -8,10 +8,14 @@
 
 .logo{
     border: 1px solid black;
+    background-color: white;
+    margin-left: 1em;
+    padding: 0em 0.2em;
+    font-size: 3em;
     position: absolute;
-    width: 7em;;
-    top: 4%;
-    left: 2%;
+    /* width: 7em; */
+    /* top: 4%; */
+    /* left: 2%; */
 }
 
 .top_container{
