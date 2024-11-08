@@ -1,7 +1,6 @@
 // import React from 'react';
 import '../../public/css/about.css';
 import jsonData from '../data/buildings.json';
-import {Link} from 'react-router-dom';
 import ProjectComponent from '../components/ProjectComponent.jsx';
 
 
@@ -36,8 +35,8 @@ const About = () => {
 
       </div>
 
-      <div className='projects_overview_home'>
-         <h2>Notable Projects</h2>
+      <h2>Notable Projects</h2>
+      <div className='projects_overview_about'>
          <ProjectComponent p={jsonData.waldorf}/>
          <ProjectComponent p={jsonData.macys}/>
 

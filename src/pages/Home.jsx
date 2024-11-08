@@ -1,5 +1,4 @@
 // import React from 'react';
-import BuildingIcon from '../components/BuildingIcon.jsx';
 import '../../public/css/home.css';
 
 
@@ -12,10 +11,6 @@ const Home = () => {
         {/* <video className='bg_home_vid'  loop='true' autoPlay='true' muted>
           <source src='../../public/videos/sample.mp4' type="video/mp4"/>
         </video> */}
-        
-        <div className='icon'>
-          <BuildingIcon />
-        </div>
 
         <div className='title_overlay'>
           {/* <img className='home_logo wallpoet_regular' src='./images/logo.jpeg' alt={'TBRAC LLC Logo'} /> */}

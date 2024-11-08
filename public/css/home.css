@@ -15,54 +15,23 @@
 }
 
 .home_logo{
-    /* padding: 2em 0em; */
-    /* margin: 0em; */
-    font-size: 7em;
+    font-size: calc(2em + 8vw); /* dynamic scale based on width*/
     padding: 0;
     margin: 0;
-    /* height: 10em;
-    width: 30em;
-    object-fit: cover; */
 }
-
+/* 
 h2{
     font-size: 2em;
     padding: 1em;
     background-color: rgb(74, 87, 163);
     color: rgb(238, 238, 238);
-}
-
-.icon{
-    position: relative;
-    overflow: hidden;
-}
-
-.learn_button{
-    background-color: orange;
-}
+} */
 
 
 
 .mini_title{
-    font-size: 1.5em;
+    font-size: calc(1em + 0.8vw); /* dynamic scale based on width*/
     /* text-align: center; */
-}
-
-.more_projects_button{
-    width: 10em;
-}
-
-.projects_overview_home{
-    display: grid;
-}
-
-.see_projects_button button{
-    background-color: rgb(238, 173, 75);
-    width: 30%;
-    height: 100%;
-    margin: 0em 0.5em 0em 0.5em; /*top right bottom left*/
-    text-transform: uppercase;
-    font-size: 1.2em;
 }
 
 

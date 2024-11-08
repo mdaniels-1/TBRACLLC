@@ -1,6 +1,6 @@
 .bio_content{
     padding: 0em 2.5em; /*top-bot left-right*/
-    text-align: justify;
+    text-align: left;
 }
 
 h2{
@@ -19,8 +19,7 @@ li{
     margin-bottom: 1em;
 }
 
-
-.projects_overview_home{
+.projects_overview_about{
     display: grid;
 }
 
