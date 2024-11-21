@@ -1,5 +1,6 @@
 // import React from 'react';
 import '../../public/css/home.css';
+import Certifications from '../components/Certifications';
 
 
 
@@ -14,11 +15,22 @@ const Home = () => {
 
         <div className='title_overlay'>
           {/* <img className='home_logo wallpoet_regular' src='./images/logo.jpeg' alt={'TBRAC LLC Logo'} /> */}
-          <p className='home_logo wallpoet_regular'>Tbracllc </p>
+          <p className='home_logo wallpoet_regular'>TBRAC LLC</p>
 
-          <p className='mini_title'>At TBRAC LLC, our mission is to deliver exceptional engineering and construction services by leveraging our extensive experience, innovative technologies, and commitment to quality. We strive to exceed client expectations and contribute to the successful completion of every project through meticulous planning, precise execution, and continuous collaboration.</p>
+          <p className='mini_title'>Delivering Excellence</p>
         </div>
       </div>
+
+
+      <div className='mission_container'>
+        <p className='mission'>Our Mission</p>
+        <p className='statement'>At TBRAC LLC, our mission is to deliver exceptional engineering and construction services by leveraging our extensive experience, innovative technologies, and commitment to quality. We strive to exceed client expectations and contribute to the successful completion of every project through meticulous planning, precise execution, and continuous collaboration.</p>
+
+      </div>
+
+      <hr/>
+
+      <Certifications />
 
     </div>
   )
