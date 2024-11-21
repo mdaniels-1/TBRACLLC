@@ -9,21 +9,23 @@
 .logo{
     border: 1px solid black;
     background-color: white;
-    margin-left: 1em;
-    padding: 0em 0.2em;
-    font-size: 3em;
+    margin: 1rem;
+    padding: 0rem 0.2rem;
+    font-size: calc(1.5rem + 1vw);
     position: absolute;
-    /* width: 7em; */
+    float: left;
+    /* width: 7rem; */
     /* top: 4%; */
     /* left: 2%; */
 }
 
 .top_container{
     display: flex;
-    height: 10em;
+    height: 10rem;
     width: 100%;
     padding: 0;
     margin: 0;
+    align-items: center;
 }
 
 .top_container img{

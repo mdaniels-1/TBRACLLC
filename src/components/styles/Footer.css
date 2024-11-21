@@ -1,11 +1,11 @@
 .footer_container{
     background-color: black;
     display: flex;
-    padding: 4em 5em;
-    margin-top: 3em;
+    padding: 4rem 5rem;
+    margin-top: 3rem;
 
 }
 
 .linked_in img{
-    height: 2em;
+    height: 2rem;
 }
