@@ -5,12 +5,12 @@ import '../components/styles/Navbar.css'
 const Navbar = () => {
   return (
     <div className='nav_container'>
-
       <nav>
-        <NavLink to="/" >Home</NavLink>
-        <NavLink to="/about" >About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-{/*         <NavLink to="/contact">Contact Us</NavLink> */}
+        <NavLink className='wallpoet_regular brand disabled' to="none">TBRAC LLC</NavLink> {/* temp fix */}
+        <NavLink className='wallpoet_regular' to="/" >HOME</NavLink>
+        <NavLink className='wallpoet_regular' to="/about" >ABOUT</NavLink>
+        <NavLink className='wallpoet_regular' to="/projects">PROJECTS</NavLink>
+        <NavLink className='wallpoet_regular' to="/contact">CONTACT US</NavLink>
       </nav>
     </div>
 

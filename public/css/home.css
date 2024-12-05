@@ -9,8 +9,19 @@
 
 }
 
+.cert_div{
+    width: 100%;
+}
+
+.cert_div, 
+.mission_container, 
+.chat_container{
+    padding: 4rem 0rem;
+}
+
 .home{
     display: grid;
+    width: 100%;
     justify-content: center;
     justify-items: center;
 }
@@ -24,35 +35,36 @@
 hr{
     width: 10%;
     border: 0.1rem solid var(--text-color);    
-    margin: 5rem 0rem;
 }
 
 
 
 .mini_title{
     font-size: calc(1rem + 0.5vw); /* dynamic scale based on width*/
-    /* text-align: center; */
     width: 50%;
 }
 
-.mission_container{
+.mission_container, 
+.chat_container{
     display: grid;
     justify-content: center;
     justify-items: center;
-    margin:  0rem;
-    margin-top: 6rem;
-    padding: 0;
+    width: 100%;
+    background-color: var(--orange-transparent);
 }
 
-.mission_container .mission{
+.mission_container h2, 
+.chat_container h2{
     font-size: calc(2rem + 1vw);
     font-weight: bold;
     color: var(--text-color);    
+    margin: 0;
 }
 
-.mission_container .statement{
+.mission_container p, 
+.chat_container p{
     color: var(--text-color);
-    font-size: calc(1rem + 0.5vw);
+    font-size: 1.2rem;
     text-align: center;
     max-width: 60%;
 
@@ -60,24 +72,20 @@ hr{
 
 .title_container{
     position: relative;
-    background-color: rgb(214, 214, 214);
     width: 100%;
-    height: 60vh;
+    height: calc(100vh - var(--logobar-height) - var(--nav-bar-height));
     display: grid;
     align-content: center; /* centers contents vertically*/
     justify-items: center; /*aligns title stuff in center horizontally */
     overflow: hidden;
-    padding: 5rem 0rem;
+    padding: 0;
 
 }
 
 .title_overlay{
     display: grid;
-    /* padding: 2%; */
-    /* padding-top: 3%; */
     color: rgb(70, 70, 70);
     width: 90%;
-    /* z-index: 1; */
     justify-items: center;
 
 }

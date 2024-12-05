@@ -1,11 +1,20 @@
 .footer_container{
     background-color: black;
-    display: flex;
-    padding: 4rem 5rem;
+    display: grid;
+    justify-items: left;
+    padding: 4rem 4rem;
     margin-top: 3rem;
 
 }
 
+.footer_container p{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
 .linked_in img{
-    height: 2rem;
+    height: calc(1rem + 0.5vw);
 }
