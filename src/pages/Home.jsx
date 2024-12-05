@@ -1,4 +1,4 @@
-// import React from 'react';
+import {Link } from "react-router-dom";
 import '../../public/css/home.css';
 import Certifications from '../components/Certifications';
 
@@ -14,23 +14,30 @@ const Home = () => {
         </video> */}
 
         <div className='title_overlay'>
-          {/* <img className='home_logo wallpoet_regular' src='./images/logo.jpeg' alt={'TBRAC LLC Logo'} /> */}
           <p className='home_logo wallpoet_regular'>TBRAC LLC</p>
-
-          <p className='mini_title'>Delivering Excellence</p>
+          <p className='mini_title'>Planning for Today, Tomorrow—Where Vision and Precision Converge  </p>
         </div>
       </div>
-
+      {/* <hr/> */}
 
       <div className='mission_container'>
-        <p className='mission'>Our Mission</p>
-        <p className='statement'>At TBRAC LLC, our mission is to deliver exceptional engineering and construction services by leveraging our extensive experience, innovative technologies, and commitment to quality. We strive to exceed client expectations and contribute to the successful completion of every project through meticulous planning, precise execution, and continuous collaboration.</p>
+        <h2>Our Mission</h2>
+        <p>At TBRAC LLC, we redefine excellence in architectural and engineering services by integrating fabrication detailing into each design approach. It empowers us to bridge the gap between conceptual ideas and real-world application, delivering innovative solutions with unmatched precision and efficiency. Guided by decades of experience and powered by cutting-edge technology, we transform ambitious ideas into extraordinary realities.</p>
+      </div>
+
+      <div className='cert_div'>
+        <Certifications />
+      </div>
+
+      <div className='chat_container'>
+        <h2>Let&apos;s Chat</h2>
+        <p>We&apos;re always looking for new opportunities. Please reach out to one of our employees to begin the consultation process.</p>
+        <Link to="/contact">
+          <button onClick=''>Contact Us</button>
+        </Link>
 
       </div>
 
-      <hr/>
-
-      <Certifications />
 
     </div>
   )

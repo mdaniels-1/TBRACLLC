@@ -11,13 +11,11 @@
 }
 
 .certifications{
-    /* background-color: green; */
-    margin-bottom: 2rem;
+    /* margin: 2rem; */
     padding: 2rem 1rem;
     display: grid;
     justify-items: center;
     justify-content: center;
-
 }
 
 .certifications h2{
@@ -33,7 +31,7 @@
 
 .certifications h3{
     font-size: calc(1rem + 0.3vw);
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
     background-color: transparent;
     padding: 0;
