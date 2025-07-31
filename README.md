@@ -2,6 +2,7 @@
  - Blog posts?
  - Non-technical owners can customzie site
  - Improve UX/liveliness
+ - UI Responsiveness (varying screens)
 
 
 
