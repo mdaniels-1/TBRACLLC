@@ -1,0 +1,74 @@
+.address{
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+
+.details{
+    float: right;
+    width: 100%;
+    /* width: 90%; */
+    padding: 0em 1rem; 
+    text-align: left;
+}
+
+.details p{
+    width: 90%;
+}
+
+
+.name{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.picture{
+    /* float: left; */
+    /* max-height: 10%; */
+    width: 50vw;
+    /* display: flex; */
+    padding-right: 0.5rem;
+
+}
+
+.picture img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project_container{
+    margin: 0.8rem;
+    /* margin-right: em; */
+    display: flex;  
+    box-shadow: 0rem 0rem 0.5rem 0rem #333333; /* create box effect*/
+    padding-right:0rem;
+    /* width: calc(100vw - 0.8em); */
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .details, .picture{
+        float: none;
+        width: calc(100vw - 6vw); /* temp fix for image not fitting*/
+        text-align: left;
+    }
+
+    .name{
+        font-size: 1.5rem;
+    }
+
+    .project_container{
+        display: grid;
+        width: calc(100vw - 6vw);
+        /* margin: 0; */
+        margin-left: 3vw;
+    }
+
+    
+  }
+
