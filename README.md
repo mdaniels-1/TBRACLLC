@@ -3,6 +3,9 @@
  - Non-technical owners can customzie site
  - Improve UX/liveliness
  - UI Responsiveness (varying screens)
+ - SIDE PROJECT:
+    - Sam.gov searching, email notifications of new contracting opportunities (https://nvembar.github.io/sam_api/sam/search.html)
+    - potential params: Advanced search, Simple search, All Words, NAICS Code (541310 Architectural Services, 541330 Engineering Services), Set Aside (Total Small Business Set-Aside FAR 19.5, Parital Small Business Set-Aside FAR 19.5, 8a Sole Source FAR 19.8, 8a Set-Aside FAR 19.8)
 
 
 

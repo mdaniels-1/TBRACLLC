@@ -12,16 +12,8 @@ const Certifications = () =>{
                     <p className='cert_desc'>Small Business Enterprise| NJ</p>
                 </div>
                 <div className='cert'>
-                    <p className='cert_abbr'>MBE</p>
-                    <p className='cert_desc'>Minority Business Enterprise | NJ </p>
-                </div>
-                <div className='cert'>
                     <p className='cert_abbr'>SDB</p>
                     <p className='cert_desc'>Small Disadvantaged Business | SAM</p>
-                </div>
-                <div className='cert'>
-                    <p className='cert_abbr'>AABE</p>
-                    <p className='cert_desc'>African American Business Enterprise | SAM</p>
                 </div>
                 <div className='cert'>
                     <p className='cert_abbr'>DBE</p>
