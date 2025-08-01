@@ -1,4 +1,4 @@
-import './home.module.css';
+import './Home.css'
 import Certifications from '@/components/Certifications';
 
 

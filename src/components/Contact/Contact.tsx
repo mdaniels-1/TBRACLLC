@@ -1,4 +1,6 @@
-const Contact = () => {
+import './Contact.css';
+
+export default function Contact() {
 
   // async function submit(data){
   //   alert('you searched for ${data}');
@@ -52,5 +54,3 @@ const Contact = () => {
     </div>
   )
 }
-
-export default Contact
