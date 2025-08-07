@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import LogoBar from '@/components/LogoBar';
 import Navbar from '@/components/Navbar';
@@ -13,6 +13,19 @@ import Contact from '@/components/Contact/Contact';
 
 export default function Landing() {
   const [tab, setTab] = useState("home");
+  const [projects, setProjects] = useState();
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const res = await fetch("/api/get-projects", {
+        method: "GET"
+      });
+      const data = await res.json()
+      setProjects(data.projects);
+    }
+    fetchProjects();
+
+  }, []);
 
   return (
     <div>
@@ -20,7 +33,9 @@ export default function Landing() {
       <Navbar setTab={setTab}/>
       {tab === "home" && (<Home setTab={setTab}/>)}
       {tab === "about" && (<About/>)}
-      {tab === "projects" && (<Projects/>)}
+      {tab === "projects" && (projects && <div>
+        <Projects projects={projects}/>
+      </div>)}
       {tab === "services" && (<Services/>)}
       {tab === "contact" && (<Contact/>)}
       <Footer />

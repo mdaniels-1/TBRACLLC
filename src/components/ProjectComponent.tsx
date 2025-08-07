@@ -1,13 +1,16 @@
 import './styles/ProjectComponent.css';
-import PropTypes from 'prop-types';
 
-// p: json object that contains the project data
-const ProjectComponent = ({p}) =>{
+import { Project } from '@/lib/sheetsdata';
 
+interface ProjectComponentProps {
+    p: Project; 
+}
+
+export default function ProjectComponent({p}: ProjectComponentProps) {
     return(
         <div className='project_container'>
             <div className='picture'>
-                <img src={`/images/${p.image_name}`} alt={`Image pictured is ${p.name}`}/>
+                <img src={p.image_url} alt={`Image pictured is ${p.name}`}/>
             </div>
             <div className='details'>
                 <p className='name'>{p.name}</p>
@@ -22,25 +25,5 @@ const ProjectComponent = ({p}) =>{
 
     )
 }
-
-// fix the prop type validation error
-ProjectComponent.propTypes = {
-    p: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        address: PropTypes.string.isRequired,
-        desc: PropTypes.string.isRequired,
-        cost: PropTypes.string.isRequired,
-        year: PropTypes.string.isRequired,
-        area: PropTypes.number,
-        scope: PropTypes.string.isRequired,
-        notes: PropTypes.string,
-        image_name: PropTypes.string.isRequired
-
-    })
-  };
-
-
-
-export default ProjectComponent;
 
 
