@@ -11,7 +11,7 @@ export default function Projects({projects}: ProjectProps) {
     <div className='projects_overview_home'>
          <h2>Projects</h2>
          {projects.map((project, index) => (
-          <ProjectComponent key={project.name} p={project}/>
+          <ProjectComponent key={index} p={project}/>
          ))}
 
       </div>
