@@ -7,7 +7,15 @@
     - Sam.gov searching, email notifications of new contracting opportunities (https://nvembar.github.io/sam_api/sam/search.html)
     - potential params: Advanced search, Simple search, All Words, NAICS Code (541310 Architectural Services, 541330 Engineering Services), Set Aside (Total Small Business Set-Aside FAR 19.5, Parital Small Business Set-Aside FAR 19.5, 8a Sole Source FAR 19.8, 8a Set-Aside FAR 19.8)
 
-
+## Google Sheets
+> Reference: https://developers.google.com/workspace/sheets/api/reference/rest
+- Setup
+    - https://developers.google.com/workspace/sheets/api/quickstart/js?authuser=3
+    - install package: googleapis
+- Workflow
+    - Data for the website is entered on the [Google Sheet](https://docs.google.com/spreadsheets/d/1yK0If4O-WIAT0RYavN49HfmIGnnbBeNeuYgEIqLQ3aA/edit?gid=0#gid=0) and the images are stored publicly accessible on [Google Drive](https://drive.google.com/drive/u/3/folders/1bG5HYrvr4dgAOdtSlNVMtEzLWnnx4IlW)
+    - To prepare an image url
+        - 
 
 # Development
  - Running the site (dev)

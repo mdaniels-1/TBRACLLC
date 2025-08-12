@@ -1,46 +1,56 @@
-import './styles/ProjectComponent.css';
-import PropTypes from 'prop-types';
+'use client';
 
-// p: json object that contains the project data
-const ProjectComponent = ({p}) =>{
+import '@/components/styles/ProjectComponent.css';
+import { Project } from '@/lib/sheetsdata';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react';
 
-    return(
-        <div className='project_container'>
-            <div className='picture'>
-                <img src={`/images/${p.image_name}`} alt={`Image pictured is ${p.name}`}/>
-            </div>
-            <div className='details'>
-                <p className='name'>{p.name}</p>
-                <p className='address'>{p.address}</p>
-                <p className='desc'>{p.desc}</p>
-                <p className='year'>Year of Completion: {p.year}</p>
-                {p.area != null && <p className='area'>Total Square Footage: {p.area}</p>}
-                <p className='scope'>Scope of Work: {p.scope}</p>
-                {p.notes != "" && <p className='notes'>Notes: {p.notes}</p>}    
-            </div>        
-        </div>
 
-    )
+
+interface ProjectComponentProps {
+    p: Project;
+    reverse: boolean;
 }
 
-// fix the prop type validation error
-ProjectComponent.propTypes = {
-    p: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        address: PropTypes.string.isRequired,
-        desc: PropTypes.string.isRequired,
-        cost: PropTypes.string.isRequired,
-        year: PropTypes.string.isRequired,
-        area: PropTypes.number,
-        scope: PropTypes.string.isRequired,
-        notes: PropTypes.string,
-        image_name: PropTypes.string.isRequired
+export default function ProjectComponent({p, reverse}: ProjectComponentProps) {
+    const controls = useAnimation()
+    const [ref, inView] = useInView({ threshold: 0.2 })
 
-    })
-  };
-
-
-
-export default ProjectComponent;
+    useEffect(() => {
+        if (inView) {
+        controls.start({ opacity: 1, x: 0 })
+        } else {
+        controls.start({ opacity: 0, x: reverse ? 50 : -50 })
+        }
+    }, [inView, controls, reverse]);
+    
+    return(
+        <motion.div
+            ref={ref}
+            animate={controls}
+            initial={{ opacity: 0, x: reverse ? 50 : -50 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className={`project-item flex ${
+                reverse ? 'flex-row-reverse ml-auto' : 'flex-row mr-auto'
+            } items-center w-full max-w-5xl px-6 py-4`}
+        >
+            <div className='project_container'>
+                <div className='picture'>
+                    <img src={p.image_url}/>
+                </div>
+                <div className='details'>
+                    <p className='name'>{p.name}</p>
+                    <p className='address'>{p.address}</p>
+                    <p className='desc'>{p.desc}</p>
+                    <p className='year'>Year of Completion: {p.year}</p>
+                    {p.area && <p className='area'>Total Square Footage: {p.area}</p>}
+                    <p className='scope'>Scope of Work: {p.scope}</p>
+                    {p.notes && <p className='notes'>Notes: {p.notes}</p>}    
+                </div>        
+            </div>
+        </motion.div>
+    )
+}
 
 
