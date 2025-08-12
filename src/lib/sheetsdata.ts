@@ -63,8 +63,7 @@ export function mapRowToProject(row: string[]): Project {
     year,
     areaStr,
     scope,
-    notes,
-    image_urlRaw
+    notes
   ] = row;
 
   return {
@@ -73,7 +72,7 @@ export function mapRowToProject(row: string[]): Project {
     desc: desc || "",
     cost_info: cost_info || "",
     year: year || "",
-    image_url: image_urlRaw?.trim() || "",
+    image_url: "",
 
     // Optional fields
     area: areaStr ? Number(areaStr) : undefined,
@@ -93,5 +92,15 @@ export async function fetchProjectData(): Promise<Project[]> {
     let data = await fetchRangeFromSheet(range);
     // Convert into list of Projects
     const projects: Project[] = data.map(mapRowToProject);
-    return projects;
+
+    return projects.map((project, idx) => ({
+      ...project,
+      image_url: [
+        "/images/Waldorf.jpg",
+        "/images/500.jpg",
+        "/images/Macys.jpg",
+        "/images/Mandarin.jpg",
+        "/images/Macys.jpg",
+      ][idx] ?? ""
+    }));
 }
