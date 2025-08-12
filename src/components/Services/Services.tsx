@@ -77,7 +77,7 @@ const capabilities: Capability[] = [
     ]
   },
   {
-    title: "Electrical & Low Voltage Systems",
+    title: "Electrical Systems",
     image: "/images/elvs.jpg",
     details: [
       "Electrical Circuit Design & Routing (Lighting, Power)",
@@ -208,18 +208,6 @@ export default function Services() {
           {capabilities.map((capability, index) => (
             <ServiceCard
               key={`${capability.title}-${index}`}
-              title={capability.title}
-              image={capability.image}
-              isSelected={selectedIndex === index}
-              onSelect={() => handleCardSelect(index)}
-              className="flex-shrink-0 w-60 min-w-[15rem]"
-            />
-          ))}
-          
-          {/* Duplicate first few cards for seamless looping */}
-          {capabilities.slice(0, 3).map((capability, index) => (
-            <ServiceCard
-              key={`duplicate-${capability.title}-${index}`}
               title={capability.title}
               image={capability.image}
               isSelected={selectedIndex === index}
