@@ -23,12 +23,12 @@ nav {
 
 /* button inactive in navbar */
 nav a{ 
+    text-align: center;
     align-content: center;
     color: white;
     font-size: 1.1rem;
     height: var(--nav-bar-height);
     width: 100%;
-
 }
 
 /* active button in nav bar */
@@ -37,7 +37,7 @@ nav a.active{
     color: black;
 }
 
-nav a:hover{
+nav a:not(.brand):hover{
     background-color: var(--orange);
     color: white;
 }
@@ -53,6 +53,3 @@ nav a:hover{
     width: 100%;
     z-index: 20;
 }
-
-
-

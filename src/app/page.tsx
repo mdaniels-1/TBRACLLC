@@ -30,7 +30,7 @@ export default function Landing() {
   return (
     <div>
       <LogoBar />
-      <Navbar setTab={setTab}/>
+      <Navbar tab={tab} setTab={setTab}/>
       {tab === "home" && (<Home setTab={setTab}/>)}
       {tab === "about" && (<About/>)}
       {tab === "projects" && (projects && <div>

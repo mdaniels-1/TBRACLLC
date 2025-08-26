@@ -1,56 +1,31 @@
 import './Contact.css';
 
+import { useState } from 'react';
+
+
 export default function Contact() {
-
-  // async function submit(data){
-  //   alert('you searched for ${data}');
-  // }
-
-  
+  const [loading, setLoading] = useState(true);  
   return (
-    <div className="contact_us">
-      
-      <h2>Contact Us</h2>
-      <p>Need to reach us? Fill out the form below and we&apos;ll get back to you as soon as possible.</p>
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="w-full max-w-2xl p-8 space-y-4">
+          <h2 className="text-5xl font-extrabold text-center">Contact Us</h2>
+          <p className="text-center text-lg">
+            Need to reach us? Fill out the form below and we'll get back to you as soon as possible.
+          </p>
 
-      {/* google form */}
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeuko5r0FIhi7L6qYKhwM6XFwJfnuVySHBrwb6xI8oy6ttgCg/viewform?embedded=true" 
-        width="640" 
-        height="1000" 
-        // frameborder="0" 
-        // marginheight="0" 
-        // marginwidth="0"
-        >Loading…
-      </iframe>
-
-      {/* <form action={submit}>
-        <label>Name
-        <input
-          type='text'
-          name='name'/>
-        </label>
-
-        <label>Company
-        <input
-          type='text'
-          name='company'/>
-        </label>      
-
-        <label>Work Email
-        <input
-          type='Email'
-          name='name'/>
-        </label>
-
-        <label>Work Phone Number
-        <input
-          type='text'
-          name='name'/>
-        </label>
-
-      </form> */}
-
-    </div>
-  )
+          <div className="form-container">
+            {loading && <div className="loader"></div>}
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeuko5r0FIhi7L6qYKhwM6XFwJfnuVySHBrwb6xI8oy6ttgCg/viewform?embedded=true"
+              width="100%"
+              height="1000"
+              onLoad={() => setLoading(false)}
+              style={{ border: 'none' }}
+            >
+              Loading…
+            </iframe>
+          </div>
+        </div>
+      </div>
+    );
 }

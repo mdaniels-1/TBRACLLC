@@ -64,7 +64,7 @@ export default function About() {
       </motion.section>
 
       <motion.section
-        className='flex-col flex items-center space-y-4 bg-zinc-50 w-screen p-2'
+        className='flex-col flex items-center space-y-4 approach_background w-screen p-2'
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}

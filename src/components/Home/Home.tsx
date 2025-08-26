@@ -1,3 +1,4 @@
+import { wallpoet } from '@/app/layout';
 import './Home.css'
 import Certifications from '@/components/Certifications';
 
@@ -12,16 +13,11 @@ export default function Home({
   return (
     <div className='home'>
       <div className='title_container'>
-        {/* <video className='bg_home_vid'  loop='true' autoPlay='true' muted>
-          <source src='../../public/videos/sample.mp4' type="video/mp4"/>
-        </video> */}
-
         <div className='title_overlay'>
-          <p className='home_logo wallpoet_regular'>TBRAC LLC</p>
-          <p className='mini_title'>Planning for Today, Tomorrow—Where Vision and Precision Converge  </p>
+          <p className='home_logo'>TBRAC LLC</p>
+          <p className='mini_title'>Planning for Today, Tomorrow—Where Vision and Precision Converge</p>
         </div>
       </div>
-      {/* <hr/> */}
 
       <div className='mission_container'>
         <h2>Our Mission</h2>
@@ -35,12 +31,9 @@ export default function Home({
       <div className='chat_container'>
         <h2>Let&apos;s Chat</h2>
         <p>We&apos;re always looking for new opportunities. Please reach out to one of our employees to begin the consultation process.</p>
-        
-        <button onClick={() => setTab('contact')}>Contact Us</button>
-
+        <button className='contact_button' onClick={() => setTab('contact')}>Contact Us</button>
       </div>
-
-
     </div>
   )
 }
+

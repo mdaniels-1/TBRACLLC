@@ -2,16 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* background: yellow; */
     justify-content: center;
     max-width: 60%;
     column-gap: 2rem;
     padding: 1rem 0rem;
-    /* grid-template-columns: none; */
 }
 
 .certifications{
-    /* margin: 2rem; */
     padding: 2rem 1rem;
     display: grid;
     justify-items: center;
@@ -41,31 +38,13 @@
 
 }
 
-.certifications p{
-    font-size: calc(1rem + 0.3vw);
-    font-weight: bold;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-
-}
-
-
-.cert{
+.cert {
     border-style: groove;
     border-width: 0.5rem;
     height: 12rem;
     width: 12rem;
     padding: 1rem;
     margin-top: 3rem;
-}
-
-.cert .cert_desc{
-    text-align: center;
-    font-size: 1rem;
-}
-
-.cert .cert_abbr{
-    font-size: 4rem;
+    display: flex;
 }
 
