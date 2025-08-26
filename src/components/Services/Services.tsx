@@ -193,7 +193,7 @@ export default function Services() {
         {/* Carousel container */}
         <motion.div
           ref={containerRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide px-6 cursor-grab active:cursor-grabbing"
+          className="flex gap-6 overflow-x-auto overflow-y-hidden scrollbar-hide px-6 cursor-grab active:cursor-grabbing"
           style={{ 
             scrollBehavior: 'auto', // Let our animation handle smoothness
             scrollbarWidth: 'none',
