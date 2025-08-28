@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="w-full max-w-2xl p-8 space-y-4">
           <h2 className="text-5xl font-extrabold text-center">Contact Us</h2>
           <p className="text-center text-lg">
-            Need to reach us? Fill out the form below and we'll get back to you as soon as possible.
+            Need to reach us? Fill out the form below and we&apos;ll get back to you as soon as possible.
           </p>
 
           <div className="form-container">

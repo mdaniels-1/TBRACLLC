@@ -10,7 +10,6 @@ interface ServiceCardProps {
 
 export default function ServiceCard({
   title,
-  image,
   isSelected,
   onSelect,
   className = "",

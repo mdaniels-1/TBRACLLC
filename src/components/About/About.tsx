@@ -1,6 +1,6 @@
 import TeamMember from '@/components/TeamMember';
 import './About.css';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 
 export default function About() {
@@ -38,12 +38,12 @@ export default function About() {
   ]
 
 
-  const fadeInUp: any = {
+  const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.6, ease: 'easeOut' as const },
     }
   };
 
@@ -72,7 +72,7 @@ export default function About() {
       >
         <div className='w-200'>
           <h3 className='text-2xl font-bold text-center'>Our Approach</h3>
-          <p>At TBRAC LLC, our approach is built on collaboration, precision, and proactive coordination. As a company, we focus on forming long-term partnerships with clients, trade partners, and government agencies by consistently delivering dependable, code-compliant, and constructible design solutions. To maximize project efficiency and reduce approval delays, TBRAC LLC has developed a proprietary in-house workflow that integrates Architectural and Engineering (A&E) services with trade-specific Fabrication Shop Drawings. This innovative approach allows us to streamline coordination, eliminate redundancy, and deliver a single-source approval package—greatly improving turnaround time, reducing RFIs, and aligning design documentation with construction execution. Whether we're supporting federal infrastructure upgrades, high-rise developments, educational facilities, or historical restorations, TBRAC LLC remains committed to excellence, innovation, and delivering results that exceed expectations.</p>
+          <p>At TBRAC LLC, our approach is built on collaboration, precision, and proactive coordination. As a company, we focus on forming long-term partnerships with clients, trade partners, and government agencies by consistently delivering dependable, code-compliant, and constructible design solutions. To maximize project efficiency and reduce approval delays, TBRAC LLC has developed a proprietary in-house workflow that integrates Architectural and Engineering (A&E) services with trade-specific Fabrication Shop Drawings. This innovative approach allows us to streamline coordination, eliminate redundancy, and deliver a single-source approval package—greatly improving turnaround time, reducing RFIs, and aligning design documentation with construction execution. Whether we&apos;re supporting federal infrastructure upgrades, high-rise developments, educational facilities, or historical restorations, TBRAC LLC remains committed to excellence, innovation, and delivering results that exceed expectations.</p>
         </div>
       </motion.section>
 

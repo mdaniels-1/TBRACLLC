@@ -28,16 +28,18 @@ export default function Landing() {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <LogoBar />
       <Navbar tab={tab} setTab={setTab}/>
-      {tab === "home" && (<Home setTab={setTab}/>)}
-      {tab === "about" && (<About/>)}
-      {tab === "projects" && (projects && <div>
-        <Projects projects={projects}/>
-      </div>)}
-      {tab === "services" && (<Services/>)}
-      {tab === "contact" && (<Contact/>)}
+      <main className="flex-1">
+        {tab === "home" && (<Home setTab={setTab}/>)}
+        {tab === "about" && (<About/>)}
+        {tab === "projects" && (projects && <div>
+          <Projects projects={projects}/>
+        </div>)}
+        {tab === "services" && (<Services/>)}
+        {tab === "contact" && (<Contact/>)}
+      </main>
       <Footer />
     </div>
   );

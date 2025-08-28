@@ -108,10 +108,7 @@ export default function Services() {
   
   // Interaction tracking
   const isDragging = useRef(false);
-  const startX = useRef(0);
-  const scrollStart = useRef(0);
   const hasMoved = useRef(false);
-  const dragThreshold = 5;
   
   // Pause auto-scroll temporarily
   const pauseAutoScroll = useCallback(() => {

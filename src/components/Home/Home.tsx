@@ -1,4 +1,4 @@
-import { wallpoet } from '@/app/layout';
+
 import './Home.css'
 import Certifications from '@/components/Certifications';
 

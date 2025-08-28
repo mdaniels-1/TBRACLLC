@@ -1,3 +1,4 @@
+import Image from 'next/image';
 // components/TeamMember.tsx
 import { motion, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
@@ -37,9 +38,11 @@ export default function TeamMember({
         reverse ? 'flex-row-reverse' : 'flex-row'
       } items-center max-w-5xl mx-auto px-6 py-4`}
     >
-      <img
+      <Image
         src={img}
         alt={name}
+        width={128}
+        height={128}
         className="w-32 h-32 rounded-full object-cover shadow-md"
       />
       <div className="mx-6">

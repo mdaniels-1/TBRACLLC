@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const wallpoet = Wallpoet({
+const wallpoet = Wallpoet({
   subsets: ['latin'],
   weight: '400',
   variable: "--font-wallpoet",

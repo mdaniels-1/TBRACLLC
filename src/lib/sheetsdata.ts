@@ -89,7 +89,7 @@ export function mapRowToProject(row: string[]): Project {
 export async function fetchProjectData(): Promise<Project[]> {
     // Range needs to match that of google sheet
     const range = "Project!A2:I"
-    let data = await fetchRangeFromSheet(range);
+    const data = await fetchRangeFromSheet(range);
     // Convert into list of Projects
     const projects: Project[] = data.map(mapRowToProject);
 

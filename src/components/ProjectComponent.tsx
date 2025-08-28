@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 import '@/components/styles/ProjectComponent.css';
 import { Project } from '@/lib/sheetsdata';
@@ -37,7 +38,7 @@ export default function ProjectComponent({p, reverse}: ProjectComponentProps) {
         >
             <div className='project_container'>
                 <div className='picture'>
-                    <img src={p.image_url}/>
+                    <Image src={p.image_url} alt={p.name} width={500} height={500}/>
                 </div>
                 <div className='details'>
                     <p className='name'>{p.name}</p>
